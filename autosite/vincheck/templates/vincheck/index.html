@@ -6,7 +6,7 @@
     <title>Главная страница</title>
 </head>
 <body>
-    <form action="{% url 'index' %}" method="post">
+    <form action=" " method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Проверить Автомобиль</button>
