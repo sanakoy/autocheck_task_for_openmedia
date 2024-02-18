@@ -1,0 +1,18 @@
+
+<! DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<body>
+    <form action="{% url 'index' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Проверить Автомобиль</button>
+    </form>
+    {{ vin_info }}
+
+
+</body>
+</html>
